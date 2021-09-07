@@ -1,0 +1,337 @@
+/********* FONT FAMILY ************
+
+font-family: 'Lora', serif;
+font-family: 'Roboto', sans-serif;
+
+***********************************/
+:root {
+    --mainColor: #e9e6e1;
+    /* --secondaryColor: #c0a290; */
+    --secondaryColor: #d7a884;
+    --thirdColor:  #90604c;
+
+    --borderColor: #f3f2ec;
+
+    --textBlack: black;
+    --textWhite: #fff;
+    --textGray: #333a38;
+    --textCream: #f5e9df;
+    --textRust: #582905;
+
+    --bgWhite: #f9f7f3;
+    --bgRust: #d7a884;
+    --bgGray: #dae1da;
+    --bgBlue: #eef3f1;
+
+}
+
+
+article, aside, nav, section, main, header, footer, figure, video, audio {
+    display: block;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--mainText);
+    font-family: 'Lora', serif;
+}
+
+p, li, span, label, input, textarea {
+    /* color: var(--secondaryText); */
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--mainText);
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+h4 {
+    font-size: 1.5em;
+    text-align: center;
+    padding-bottom: .5em;
+    font-weight: 500;
+
+}
+
+/****************************** 
+
+        NAV WRAPPER
+
+******************************/
+
+header {
+    background-color: var(--bgWhite);
+}
+
+header h1 {
+    font-size: 4em;
+    text-align: center;
+    padding: 1em;
+}
+
+#main-container {
+    padding: 3em 2em 3em 2em;
+}
+
+/****************************** 
+
+        INTRO WRAPPER
+
+******************************/
+
+/* gallery carousel */
+
+/****************************** 
+
+        ABOUT WRAPPER
+
+******************************/
+
+.about-wrapper {
+    background-color: var(--bgRust);
+}
+
+.about-wrapper h4 {
+    color: var(--textRust);
+}
+
+.about-wrapper img {
+    border-radius: 50%;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    align-items: center;
+}
+
+.about-wrapper p {
+    color: var(--textBlack);
+    padding: .5em 1.5em 0 1.5em;
+    text-align: center;
+    font-weight: 300;
+
+}
+
+/****************************** 
+
+        GALLERY WRAPPER
+
+******************************/
+.gallery-wrapper {
+    background-color: var(--bgWhite);
+}
+
+.gallery-wrapper h4 {
+    color: var(--textBlack);
+}
+
+
+/****************************** 
+
+        PRICES WRAPPER
+
+******************************/
+
+.prices-wrapper {
+    background-color: var(--bgBlue);
+}
+
+.prices-wrapper h4 {
+    color: var(--textBlack);
+}
+
+#priceList {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .5em;
+    margin-bottom: 1em;
+    height: auto;
+}
+
+#priceList th, #priceList td{
+    border: 1px solid #000;
+    padding: .5em;
+    text-align: center;
+    font-size: .9em;
+}
+
+#priceList th {
+    font-weight: 700;
+    background-color: #55615d;
+    color: var(--textWhite);
+}
+tr:nth-child(even){
+    color: var(--textBlack);
+    background-color: var(--bgWhite);
+}
+
+.sizeNote {
+    width: 100%;
+    text-align: center;
+    background-color: var(--bgWhite);
+    box-shadow: 1px 1px 3px 2px var(--bgWhite);
+    padding: .8em;
+}
+
+.sizeNote p {
+    font-weight: 300;
+    font-size: .8em;
+}
+
+/****************************** 
+
+        COMMISSIONS WRAPPER
+
+******************************/
+.comm-wrapper {
+    background-color: var(--bgWhite);
+
+}
+.comm-wrapper h4 {
+    color: var(--textBlack);
+}
+
+.direct-wrapper {
+    border-top: 1px solid var(--textGray);
+    border-bottom: 1px solid var(--textGray);
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.direct-wrapper p {
+    text-align: center;
+    line-height: 2em;
+}
+.direct-wrapper p:nth-child(odd) {
+    color: var(--textGray);
+    font-size: 1.2em;
+}
+.direct-wrapper p:nth-child(even) {
+    font-weight: 300;
+}
+
+
+.direct-wrapper p:first-child {
+    padding-top: 1em;
+}
+
+.direct-wrapper p:last-child {
+    padding-bottom: 1em;
+}
+
+.booking-wrapper {
+    padding-top: .5em;
+}
+.booking-wrapper h5{
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 1.2em;
+}
+
+.booking-wrapper p {
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.2em;
+}
+
+/****************************** 
+
+        FAQ WRAPPER
+
+******************************/
+.faq-wrapper {
+    background-color: var(--bgBlue);
+}
+
+.comm-wrapper h4 {
+    color: var(--textBlack);
+}
+
+/****************************** 
+
+        CONTACT WRAPPER
+
+******************************/
+.contact-wrapper {
+    background-color: var(--bgWhite);
+}
+
+.contact-wrapper h4 {
+    color: var(--textBlack);
+}
+
+#contact-form {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid var(--borderColor);
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--previewBg);
+    margin-bottom: 50px;
+}
+
+#contact-form label {
+    line-height: 2.7em;
+    text-align: left;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+#contact-form textarea {
+    min-height: 100px;
+    font-size: 14px;
+}
+
+.input-field {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--secondaryColor);
+    border-radius: 5px;
+    border: 1px solid var(--borderColor);
+    font-size: .9em;
+}
+
+#submit-btn {
+    margin-top: 10px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--textWhite);
+    background-color: var(--bgRust);
+    border: none;
+    font-size: .9em;
+    font-weight: 700;
+}
+
+/****************************** 
+
+        FOOTER WRAPPER
+
+******************************/
+
+
+
+
