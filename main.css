@@ -331,6 +331,19 @@ tr:nth-child(even){
         FOOTER WRAPPER
 
 ******************************/
+footer {
+    background-color: var(--bgBlue);
+}
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h5 {
+    color: var(--textBlack);
+    
+}
+
 
 
 
