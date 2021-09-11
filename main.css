@@ -81,7 +81,7 @@ header h1 {
     padding: 1em;
 }
 
-#main-container {
+#main-container, footer {
     padding: 3em 2em 3em 2em;
 }
 
@@ -333,15 +333,57 @@ tr:nth-child(even){
 ******************************/
 footer {
     background-color: var(--bgBlue);
-}
-.footer-wrapper {
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
 }
 
 footer h5 {
     color: var(--textBlack);
+    font-size: 1.2em;
+    padding-top: .5em;
+    padding-bottom: .5em;
     
+}
+.description a {
+    font-family: 'Lora', serif;
+    font-size: 1.2em;
+}
+.description p {
+    font-size: .8em;
+    font-weight: 300;
+    width: 75%;
+    margin: auto;
+}
+
+.links li {
+    font-size: 1;
+}
+
+.links li a:hover {
+    color: var(--secondaryColor)};
+ul.footer-icons {
+    display: block;
+}
+ul.footer-icons li{
+    display: inline-block;
+    font-size: 1.5em; 
+}
+ul.footer-icons li a {
+    color: var(--secondaryColor);
+}
+
+ul.footer-icons li a:hover {
+    color: var(--textRust);
+}
+.fa-facebook-square {
+    margin: 0 .8em;
+}
+
+.fa-twitter-square {
+    margin-right: .8em;
+}
+small{
+    display: block;
+    padding-top: 1em;
 }
 
 
