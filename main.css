@@ -64,6 +64,28 @@ h4 {
     font-weight: 500;
 
 }
+/****************************** 
+
+        HEADER WRAPPER
+
+******************************/
+header {
+    background-color: var(--bgWhite);
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+}
+
+#main-container, footer {
+    padding: 3em 2em 3em 2em;
+}
+
+
+
 
 /****************************** 
 
@@ -71,19 +93,7 @@ h4 {
 
 ******************************/
 
-header {
-    background-color: var(--bgWhite);
-}
 
-header h1 {
-    font-size: 4em;
-    text-align: center;
-    padding: 1em;
-}
-
-#main-container, footer {
-    padding: 3em 2em 3em 2em;
-}
 
 /****************************** 
 
