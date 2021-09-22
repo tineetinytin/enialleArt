@@ -6,7 +6,6 @@ font-family: 'Roboto', sans-serif;
 ***********************************/
 :root {
     --mainColor: #e9e6e1;
-    /* --secondaryColor: #c0a290; */
     --secondaryColor: #d7a884;
     --thirdColor:  #90604c;
 
@@ -74,10 +73,13 @@ header {
 }
 
 .logo {
+    max-width: 100%;
+    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding-top: 1em;
+    
 }
 
 #main-container, footer {
@@ -263,6 +265,7 @@ tr:nth-child(even){
     font-weight: 300;
     font-size: 1em;
     line-height: 1.2em;
+    text-align: justify;
 }
 
 /****************************** 
