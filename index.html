@@ -13,23 +13,46 @@
 </head>
 <body>
     <header>
-        <a href="#"><img class="logo" src="images/logo-header.png" alt="Enialle Art Logo"></a>
+        <a href="#" id="cover"><img class="logo" src="images/logo-header.png" alt="Enialle Art Logo"></a>
 
-        <nav>
+        <nav id="cover">
+            <label for="showMenu" class="showMenu" >
+                <span class="fas fas fa-bars" aria-hidden="true" id="btn"></span>
+                </label>
+        
+                
+            <input type="checkbox" id="showMenu" role="button">
             <ul class="menu">
                 <li><a href="#">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#gallery">GALLERY</a></li>
                 <li><a href="#prices">PRICES</a></li>
                 <li><a href="#comm">COMMISSIONS</a></li>
-                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
 
     </header>
 
-    <div class="intro-wrapper">
+    
+    <div id="about" class="about-wrapper">
+        <div id="cover">
+        <div id="main-container">
+            <h4>ABOUT ME</h4>
+            <img src="images/profilePic.jpg" alt="ellaine profile pic">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Praesent ultricies sed risus in tempus. Nunc eu imperdiet velit.</p>
+            <p>Phasellus ornare consequat tortor, imperdiet eleifend sem sodales sed. Maecenas ultricies fermentum odio non venenatis.  Nunc lobortis sem id velit maximus, a imperdiet erat tincidunt.</p>
+
+        </div>
+    </div>
+    </div>
+    <!-- end of about wrapper -->
+
+    <div id="gallery" class="gallery-wrapper">
+       
+        <div id="main-container">
+        <h4>GALLERY</h4>
+
         <div class="container">
             <div class="panel active" style="background-image: url(images/pic1.jpeg);">
                 <h3>Explore the World</h3>
@@ -47,122 +70,110 @@
                 <h3>Explore the World</h3>
             </div>
         </div>
-    </div>
-
-    
-    <div id="about" class="about-wrapper">
-        <div id="main-container">
-            <h4>ABOUT ME</h4>
-            <img src="images/profilePic.jpg" alt="ellaine profile pic">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Praesent ultricies sed risus in tempus. Nunc eu imperdiet velit.</p>
-            <p>Phasellus ornare consequat tortor, imperdiet eleifend sem sodales sed. Maecenas ultricies fermentum odio non venenatis.  Nunc lobortis sem id velit maximus, a imperdiet erat tincidunt.</p>
-
-        </div>
-    </div>
-    <!-- end of about wrapper -->
-
-    <div id="gallery" class="gallery-wrapper">
-        <div id="main-container">
-        <h4>GALLERY</h4>
 
         <!-- pictures -->
         <!-- background slider when clicked -->
 
         </div>
+ 
     </div>
     <!-- end of gallery wrapper -->
 
     <div id="prices" class="prices-wrapper">
-        <div id="main-container">
-        <h4>PRICES</h4>
-        <div style="overflow-x:auto;">
-        <table id="priceList">
-            <tr>
-                <th>Size</th>
-                <th>Price</th>
-                <th>+1 PERSON/PET</th>
-                <th>+2 PERSONS/PETS</th>
-            </tr>
-            <tr>
-                <td>A5 <br>​​(14.8 x 21cm)</td>
-                <td>$225</td>
-                <td>N/A</td>
-                <td>N/A</td>
-            </tr>
-            <tr>
-                <td>8 x 10" <br>(20.3 x 25.4cm)</td>
-                <td>$295</td>
-                <td>N/A</td>
-                <td>N/A</td>
-            </tr>
-            <tr>
-                <td>A4 <br>(21 x 29.7cm)</td>
-                <td>$330</td>
-                <td>+$65</td>
-                <td>N/A</td>
-            </tr>
-            <tr>
-                <td>10 x 12" <br>(25.4 x 30.5cm)</td>
-                <td>$365</td>
-                <td>+$70</td>
-                <td>N/A</td>
-            </tr>
-            <tr>
-                <td>12 x 16" <br>(30 x 42cm)</td>
-                <td>$470</td>
-                <td>+$90</td>
-                <td>+$115</td>
-            </tr>
-        </table>
-        </div>
+        <div id="cover">
+            <div id="main-container">
+            <h4>PRICES</h4>
+                <div style="overflow-x:auto;">
+                <table id="priceList">
+                    <tr>
+                        <th>Size</th>
+                        <th>Price</th>
+                        <th>+1 PERSON/PET</th>
+                        <th>+2 PERSONS/PETS</th>
+                    </tr>
+                    <tr>
+                        <td>A5 <br>​​(14.8 x 21cm)</td>
+                        <td>$225</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>8 x 10" <br>(20.3 x 25.4cm)</td>
+                        <td>$295</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>A4 <br>(21 x 29.7cm)</td>
+                        <td>$330</td>
+                        <td>+$65</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>10 x 12" <br>(25.4 x 30.5cm)</td>
+                        <td>$365</td>
+                        <td>+$70</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>12 x 16" <br>(30 x 42cm)</td>
+                        <td>$470</td>
+                        <td>+$90</td>
+                        <td>+$115</td>
+                    </tr>
+                </table>
+                </div>
 
-        <div class="sizeNote">
-            <p>If you would like a different size to the ones stated please let me know and I shall be more than happy to accommodate you. Prices include free shipping within the UK  and are sent special delivery via Royal Mail.​
-            Outside the UK the cost of postage will vary according to the size of portrait and the country of destination. 
-            I ship worldwide with Royal Mail/Parcel Force and each portrait is sent with secure tracking.</p>
+                <div class="sizeNote">
+                    <p>If you would like a different size to the ones stated please let me know and I shall be more than happy to accommodate you. Prices include free shipping within the UK  and are sent special delivery via Royal Mail.​
+                    Outside the UK the cost of postage will vary according to the size of portrait and the country of destination. 
+                    I ship worldwide with Royal Mail/Parcel Force and each portrait is sent with secure tracking.</p>
+                </div>
+            </div>
         </div>
-    </div>
     </div>
 
     <!-- end of prices wrapper -->
 
     <div id="comm" class="comm-wrapper">
-        <div id="main-container">
-            <h4>COMMISSIONS</h4>
-                <div class="direct-wrapper">
-                    <p><strong>Make a Booking</strong></p>
-                    <p>Email me to book your pet portrait</p>
-                    <p><strong>Deposit</strong></p>
-                    <p>Secure you time slot with a deposit</p>
-                    <p><strong>Photograph</strong></p>
-                    <p>Choose the perfect photo</p>
-                </div>
+        <div id="cover">
+            <div id="main-container">
+                <h4>COMMISSIONS</h4>
+                    <div class="direct-wrapper">
+                        <p><strong>Make a Booking</strong></p>
+                        <p>Email me to book your pet portrait</p>
+                        <p><strong>Deposit</strong></p>
+                        <p>Secure you time slot with a deposit</p>
+                        <p><strong>Photograph</strong></p>
+                        <p>Choose the perfect photo</p>
+                    </div>
+                    <section>
+                    <div class="booking-wrapper">
+                        <article class="card">
+                        <i class="far fa-calendar-alt"></i>
+                        <h5>BOOKING</h5>
+                        <p>It is essential to book a time slot with me to secure you spot and ensure your portrait will be ready for when you need it. This is most important if you are gifting a portrait for a particular date such as a birthday, anniversary or christmas present. A portrait can take me between 1 - 4 weeks to complete depending on the size and medium used. Please factor this into your time frame when booking a portrait with me.​
+                        </p>
+                        </article>   
 
-                <div class="booking-wrapper">
-                    <h5>BOOKING</h5>
-                    <p>It is essential to book a time slot with me to secure you spot and ensure your portrait will be ready for when you need it. This is most important if you are gifting a portrait for a particular date such as a birthday, anniversary or christmas present. A portrait can take me between 1 - 4 weeks to complete depending on the size and medium used. Please factor this into your time frame when booking a portrait with me.​
-                    </p>
+                        <article class="card">  
+                        <i class="fas fa-lock"></i>
+                        <h5>DEPOSIT</h5>
+                        <p>I require a 50% non-refundable deposit to confirm your booking and secure your place on my waiting list. The remaining balance is paid prior to delivery and only when you are 100% satisfied with your portrait. ​
+                        I will contact you to let you know when I am about to begin your portrait and during the process I will be in touch with progress updates of your artwork so you can enjoy watching the drawing take shape. </p>
+                        </article>
 
-                    <h5>DEPOSIT</h5>
-                    <p>I require a 50% non-refundable deposit to confirm your booking and secure your place on my waiting list. The remaining balance is paid prior to delivery and only when you are 100% satisfied with your portrait. ​
-                    I will contact you to let you know when I am about to begin your portrait and during the process I will be in touch with progress updates of your artwork so you can enjoy watching the drawing take shape. </p>
-
-                    <h5>REFERENCED PHOTO</h5>
-                    <p>The most important part of the process is choosing a suitable photograph. Having a detailed, high resolution photo to draw from makes such a difference to the outcome. I draw what I see and if your pet's features are not clearly shown in the photograph then I cannot capture the essence of your pet's personality. If however you think you may already have the perfect image of your pet for me to use but you're unsure what 'perfect' means, please scroll down to 'the perfect shot' info below for tips on how to achieve this. </p>
-                </div>
+                        <article class="card">
+                        <i class="fas fa-link"></i>
+                        <h5>REFERENCED PHOTO</h5>
+                        <p>The most important part of the process is choosing a suitable photograph. Having a detailed, high resolution photo to draw from makes such a difference to the outcome. I draw what I see and if your pet's features are not clearly shown in the photograph then I cannot capture the essence of your pet's personality. If however you think you may already have the perfect image of your pet for me to use but you're unsure what 'perfect' means, please scroll down to 'the perfect shot' info below for tips on how to achieve this. </p>
+                        </article> 
+                    </div>
+                </section>
+            </div>
         </div>
     </div>
     <!-- end of commissions wrapper -->
-
-    <div id="faq" class="faq-wrapper">
-        <div id="main-container">
-        <h4>FREQUENTLY ASKED QUESTIONS</h4>
-
-        <!-- FAQQQQ -->
-        </div>
-    </div>
-
-    <!-- end of faq wrapper -->
 
     
     <div id="contact" class="contact-wrapper">
@@ -189,65 +200,68 @@
 
     <!-- end of contact wrapper -->
 
+</div> 
+<script src="app.js"></script>    
+
 </body>
 
 <footer>
 
-    <div class="footer-wrapper">
-    <div class="description">
-        <a href="#"> <img class="logo" src="images/logo-small.png" alt="Enialle Art Logo"></a>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vulputate sollicitudin massa in feugiat. Cras.</p>
-    </div>
+    <div class="flex-container">
+        <div class="description">
+            <a href="#"> <img class="logo" src="images/logo-small.png" alt="Enialle Art Logo"></a>
+            <p class="hiddenDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vulputate sollicitudin massa in feugiat. Cras.</p>
+        </div>
 
-    <div class="links">
-        <h5>USEFUL LINKS</h5>
-        <ul>
-            <li>
-                <a href="#about">ABOUT</a>
-            </li>
-            <li>
-                <a href="#gallery">GALLERY</a>
-            </li>
-            <li>
-                <a href="#prices">PRICES</a>
-            </li>
-            <li>
-                <a href="#faq">FAQ</a>
-            </li>
-         </ul>
+        <div class="links">
+            <h5>USEFUL LINKS</h5>
+            <ul>
+                <li>
+                    <a href="#about">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#gallery">GALLERY</a>
+                </li>
+                <li>
+                    <a href="#prices">PRICES</a>
+                </li>
+                <li>
+                    <a href="#faq">FAQ</a>
+                </li>
+            </ul>
 
-    </div>
+        </div>
 
 
-    <div class="icons" >
-        <h5>FOLLOW ME</h5>
-        <ul class="footer-icons">
-            <li>
-                <!-- FACEBOOK -->
-                <a href="#" target=_blank>
-                <i class="fab fa-instagram-square"></i>
-                </a>
-            </li>
-            <li>
-                <!-- FACEBOOK -->
-                <a href="#" target=_blank>
-                <i class="fab fa-facebook-square"></i>
-                </a>
-            </li>
-            <li>
-                <!-- TWITTER -->
-                <a href="#" target=_blank>
-                <i class="fab fa-twitter-square"></i>
-                </a>
-            </li>
-            <li>
-                <!-- EMAIL -->
-                <a href="mailto:test@gmail.com">
-                <i class="fas fa-envelope-square"></i>
-                </a>
-            </li>
-        </ul>
-    </div>
+        <div class="icons" >
+            <h5>FOLLOW ME</h5>
+            <ul class="footer-icons">
+                <li>
+                    <!-- FACEBOOK -->
+                    <a href="#" target=_blank>
+                    <i class="fab fa-instagram-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <!-- FACEBOOK -->
+                    <a href="#" target=_blank>
+                    <i class="fab fa-facebook-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <!-- TWITTER -->
+                    <a href="#" target=_blank>
+                    <i class="fab fa-twitter-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <!-- EMAIL -->
+                    <a href="mailto:test@gmail.com">
+                    <i class="fas fa-envelope-square"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
 </div>
 
     <small>&copy; 2021 Enialle Art | All Rights Reserved</small>

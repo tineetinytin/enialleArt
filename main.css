@@ -96,14 +96,63 @@ header {
 ******************************/
 
 
+nav ul.menu {
+    list-style-type: none;
+    display: none;
+    transition: all .3s ease-out;
+}
 
-/****************************** 
 
-        INTRO WRAPPER
 
-******************************/
+nav li {
+    background-color: var(--bgWhite);
+    text-align: center;
+    border-bottom: solid 1px #fff;
+    transition: all .3s ease-out;
+}
+nav li:last-child {
+    margin-bottom: .6em;
+}
+nav li a {
+    display: block;
+    padding: .5em;
+    color: var(--textRust);
+    text-decoration: none;
+    font-weight: 900;
 
-/* gallery carousel */
+    
+}
+
+nav li a:hover {
+    background-color: var(--textRust);
+    color: #fff;
+    transition: all .3s;
+}
+.showMenu {
+        display: block;
+        cursor: pointer;
+        position: relative;
+        top: -1.5em;
+        right: 1em;
+        color: #fff;
+        font-size: 1.75em;
+        float: right;
+ 
+    }
+.fa-bars {
+        font-size: 1em;
+        color: var(--textRust);
+}
+
+nav input[type=checkbox]:checked ~ ul.menu {
+    display: block;
+}
+
+nav input[type=checkbox]{
+    display:none;
+}
+
+
 
 /****************************** 
 
@@ -150,6 +199,57 @@ header {
 .gallery-wrapper h4 {
     color: var(--textBlack);
 }
+
+.container {
+    display: flex;
+    width: 90vw;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 85vh;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    flex: .5;
+    margin: 10px;
+    transition: all 700ms ease-in;
+}
+
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opactity .3s ease-in .4s;
+}
+
+/* @media(max-width: 480px) {
+    .container {
+        width: 100vw;
+    }
+    .panel:nth-last-of-type(4),
+    .panel:nth-last-of-type(5) {
+        display: none;
+    }
+} */
+
 
 
 /****************************** 
@@ -229,7 +329,9 @@ tr:nth-child(even){
 
 
 }
-
+.direct-wrapper strong {
+    color: var(--textRust);
+}
 .direct-wrapper p {
     text-align: center;
     line-height: 2em;
@@ -254,6 +356,28 @@ tr:nth-child(even){
 .booking-wrapper {
     padding-top: .5em;
 }
+
+#main-container section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.booking-wrapper .card {
+    /* width: 32%; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 30px;
+}
+
+.booking-wrapper .card:nth-child(2) {
+    margin: 10px 0;
+}
+
+.booking-wrapper .card i {
+    font-size: 50px;
+    color: var(--bgRust);
+}
+
 .booking-wrapper h5{
     text-align: center;
     padding-top: 1em;
@@ -270,24 +394,11 @@ tr:nth-child(even){
 
 /****************************** 
 
-        FAQ WRAPPER
-
-******************************/
-.faq-wrapper {
-    background-color: var(--bgBlue);
-}
-
-.comm-wrapper h4 {
-    color: var(--textBlack);
-}
-
-/****************************** 
-
         CONTACT WRAPPER
 
 ******************************/
 .contact-wrapper {
-    background-color: var(--bgWhite);
+    background-color: var(--bgBlue);
 }
 
 .contact-wrapper h4 {
@@ -345,7 +456,7 @@ tr:nth-child(even){
 
 ******************************/
 footer {
-    background-color: var(--bgBlue);
+    background-color: var(--bgWhite);
     text-align: center;
 }
 
@@ -375,6 +486,7 @@ footer h5 {
     color: var(--secondaryColor)};
 ul.footer-icons {
     display: block;
+    transition: all .5s;
 }
 ul.footer-icons li{
     display: inline-block;
@@ -400,6 +512,130 @@ small{
 }
 
 
+/****************************** 
 
+       LARGE SCREEN RULES
 
+******************************/
+@media screen and (min-width: 420px) {
+    .about-wrapper p{
+        max-width: 90%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 700px) {
+
+    #cover {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    nav ul.menu {
+        padding-top: 20px;
+        display: block;
+        background-color: var(--bgWhite);
+        text-align: center;
+        
+    }
+
+    nav li {
+        background-color: var(--bgWhite);
+        display: inline-block;
+        border-bottom: none;
+        padding: 0 0.5em;
+        transition: all .8s ease;
+    }
+
+    nav li a {
+        color: #000;
+        text-decoration: none;
+    }
+    
+    nav li a:hover {
+        background-color: var(--bgWhite);
+        color: var(--thirdColor);
+        /* text-decoration: underline; */
+        padding-left: 50px;
+        padding-right: 50px;
+        transition: all .8s ease;
+    }
+    
+    .showMenu {
+        display: none;
+    }
+
+    footer {
+        text-align: left;
+    }
+
+    footer .flex-container {
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+        
+    }
+
+    .links, 
+    .description, 
+    .icons {
+        width: 32%;
+    }
+
+    .description .logo {
+        padding-top: 0;
+    }
+    .description .hiddenDescription {
+        display: none;
+    }
+
+    .links,
+    .icons h5 {
+        text-align: left;
+    }
+
+    .icons li a {
+        text-align: left;
+    }
+    .links a:hover,
+    .icons ul li a:hover  {
+        /* padding-top: 50px; */
+        transition: all .3s ease;
+    }
+    footer small {
+        margin-top: 1em;
+        text-align: center;
+    }
+   
+}
+    
+
+@media screen and (min-width: 920px) {
+    section .booking-wrapper {
+        margin-top: 2em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .booking-wrapper .card {
+        width: 32%;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+         rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        padding: 30px;
+    }
+    
+    .card i {
+        font-size: 50px;
+    }
+    
+    .booking-wrapper .card p {
+        line-height: 150%;
+    }
+
+    .booking-wrapper .card:nth-child(2) {
+        margin: 0 0;
+    }
+}
+    
+    
 
