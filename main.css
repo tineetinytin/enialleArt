@@ -480,11 +480,14 @@ footer h5 {
 }
 
 .links li {
-    font-size: 1;
+    font-size: 1em;
 }
 
 .links li a:hover {
-    color: var(--secondaryColor)};
+    color: var(--secondaryColor);
+
+}
+    
 ul.footer-icons {
     display: block;
     transition: all .5s;
